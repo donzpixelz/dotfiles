@@ -30,4 +30,4 @@ mkdir $HOME/Sites
 
 # Set OS X preferences
 # We will run this last because this will reload the shell
-source .osx
+source /Users/donwilson/.dotfiles/.osx
