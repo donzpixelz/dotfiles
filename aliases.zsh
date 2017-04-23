@@ -20,3 +20,18 @@ alias vhalt="vagrant halt"
 alias vssh="vagrant ssh"
 alias vreload="vagrant reload"
 alias vrebuild="vagrant destroy --force && vagrant up"
+
+#shortcut to edit .bash_profile and also source it
+alias snbp='sudo nano /.bash_profile'
+alias sbp='source /.bash_profile'
+
+
+#docker-machine shortcuts
+alias dmls='docker-machine ls'
+
+
+#docker1 shortcuts
+alias actdocker1='eval $(docker-machine env docker1) && echo -e "docker1 Activated!"'
+alias sshdocker1='docker-machine ssh docker1'
+alias lscdocker1='docker-machine ssh docker1 docker ps'
+alias lsidocker1='docker-machine ssh docker1 docker images'

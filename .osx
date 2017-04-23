@@ -79,6 +79,9 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 # Finder                                                                      #
 ###############################################################################
 
+# donznote: Set the preferred View Style to Column, Icon, List, or Cover Flow
+defaults write com.apple.Finder FXPreferredViewStyle List
+
 # Finder: disable window animations and Get Info animations
 defaults write com.apple.finder DisableAllAnimations -bool true
 
@@ -163,10 +166,10 @@ defaults write com.apple.dashboard mcx-disabled -bool true
 defaults write com.apple.dock dashboard-in-overlay -bool true
 
 # Remove the auto-hiding Dock delay
-defaults write com.apple.dock autohide-delay -float 0
+# defaults write com.apple.dock autohide-delay -float 0
 
 # Remove the animation when hiding/showing the Dock
-defaults write com.apple.dock autohide-time-modifier -float 0
+# defaults write com.apple.dock autohide-time-modifier -float 0
 
 # Automatically hide and show the Dock
 # defaults write com.apple.dock autohide -bool true
@@ -270,7 +273,7 @@ defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Show 24 hours a day
-defaults write com.apple.ical "number of hours displayed" 24
+# defaults write com.apple.ical "number of hours displayed" 24
 
 # Week should start on Monday
 defaults write com.apple.ical "first day of the week" 1
@@ -283,7 +286,7 @@ defaults write com.apple.ical "first minute of work hours" 540
 ###############################################################################
 
 # Custom DateFormat
-defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm"
+# defaults write com.apple.menuextra.clock DateFormat "EEE MMM d  H:mm"
 
 ###############################################################################
 # Photos                                                                      #
